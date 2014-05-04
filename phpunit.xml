@@ -5,6 +5,6 @@
     <file>QuickBotTest.php</file>
   </testsuite>
   <logging>
-    <log type="coverage-clover" target="coverage.xml" />
+    <log type="coverage-clover" target="build/logs/clover.xml" />
   </logging>
 </phpunit>
