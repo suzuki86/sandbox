@@ -22,5 +22,4 @@ $twitter = new TwitterOAuth(
 );
 $qb = new QuickBot($twitter);
 $qb->tweet();
-
 ```
