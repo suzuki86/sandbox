@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1399211223">
-  <project timestamp="1399211223">
-    <file name="/home/tsuzuki/php/quickbot/QuickBot.php">
+<coverage generated="1399227268">
+  <project timestamp="1399227268">
+    <file name="/home/tsuzuki/php/sandbox/QuickBot.php">
       <class name="QuickBot" namespace="global">
         <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="23" coveredelements="23"/>
       </class>
@@ -31,7 +31,7 @@
       <line num="59" type="stmt" count="1"/>
       <metrics loc="61" ncloc="43" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="23" coveredelements="23"/>
     </file>
-    <file name="/home/tsuzuki/php/quickbot/twitteroauth/twitteroauth/OAuth.php">
+    <file name="/home/tsuzuki/php/sandbox/twitteroauth/twitteroauth/OAuth.php">
       <class name="OAuthException" namespace="global">
         <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
@@ -469,7 +469,7 @@
       <line num="872" type="stmt" count="0"/>
       <metrics loc="874" ncloc="549" classes="11" methods="55" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="343" coveredstatements="4" elements="398" coveredelements="5"/>
     </file>
-    <file name="/home/tsuzuki/php/quickbot/twitteroauth/twitteroauth/twitteroauth.php">
+    <file name="/home/tsuzuki/php/sandbox/twitteroauth/twitteroauth/twitteroauth.php">
       <class name="TwitterOAuth" namespace="global">
         <metrics methods="17" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="97" coveredstatements="5" elements="114" coveredelements="6"/>
       </class>
