@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
   colors="true">
-  <testsuite name="QuickBotTest">
-    <file>QuickBotTest.php</file>
-  </testsuite>
-  <logging>
-    <log type="coverage-clover" target="build/logs/clover.xml" />
-  </logging>
+    <testsuite name="QuickBotTest">
+      <file>QuickBotTest.php</file>
+      <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml" />
+      </logging>
+    </testsuite>
+    <filter>
+      <whitelist>
+        <exclude>
+          <directory>twitteroauth/</directory>
+        </exclude>
+      </whitelist>
+    </filter>
 </phpunit>
