@@ -10,7 +10,7 @@
   <filter>
     <whitelist>
       <exclude>
-        <directory>twitteroauth</directory>
+        <directory suffix=".php">twitteroauth</directory>
       </exclude>
     </whitelist>
   </filter>
