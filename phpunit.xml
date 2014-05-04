@@ -9,6 +9,7 @@
   </logging>
   <filter>
     <whitelist>
+      <file>QuickBot.php</file>
       <exclude>
         <directory suffix=".php">twitteroauth</directory>
       </exclude>
