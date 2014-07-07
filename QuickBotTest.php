@@ -34,7 +34,7 @@ class QuickBotText extends PHPUnit_Framework_TestCase{
   }
 
   public function testRunkit(){
-    runkit_functioin_rename('time', 'return "hello";');
+    runkit_function_rename('time', 'return "hello";');
     $this->assertEquals('hello', time());
   }
 }
