@@ -32,4 +32,9 @@ class QuickBotText extends PHPUnit_Framework_TestCase{
     $qb = new QuickBot($mockTwitterOAuth);
     $qb->tweet();
   }
+
+  public function testRunkit(){
+    runkit_functioin_rename('time', 'return "hello";');
+    $this->assertEquals('hello', time());
+  }
 }
