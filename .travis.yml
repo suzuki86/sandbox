@@ -6,7 +6,7 @@ before_install:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
-    git clone --depth=1 git://github.com/zenovich/runkit.git;
+  - git clone --depth=1 git://github.com/zenovich/runkit.git;
     cd runkit;
     phpize;
     ./configure;
