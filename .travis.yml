@@ -5,6 +5,7 @@ before_install:
   - git clone https://github.com/abraham/twitteroauth.git
 before_script:
   - curl -s http://getcomposer.org/installer | php
+  - php composer.phar self-update
   - php composer.phar install --dev --no-interaction
   - git clone --depth=1 git://github.com/zenovich/runkit.git
   - cd runkit
