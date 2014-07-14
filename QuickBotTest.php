@@ -37,4 +37,8 @@ class QuickBotText extends PHPUnit_Framework_TestCase{
     runkit_function_redefine('time', '', 'return "hello";');
     $this->assertEquals('hello', time());
   }
+
+  public function testSendMail(){
+    $this->assertTrue(mb_send_mail('tsnr0001@gmail.com', 'test', 'body'));
+  }
 }
