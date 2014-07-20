@@ -3,6 +3,8 @@
 class QuickBotText extends PHPUnit_Framework_TestCase{
 
   public function testSendMail(){
+    mb_language('ja');
+    mb_internal_encoding('UTF-8');
     $this->assertTrue(mb_send_mail('to@example.com', 'test subject', 'test body'));
     $messages = json_decode(file_get_contents('http://127.0.0.1:1080/messages'));
     $message = json_decode(file_get_contents('http://127.0.0.1:1080/messages/' . $messages[0]->id . '.json'));
