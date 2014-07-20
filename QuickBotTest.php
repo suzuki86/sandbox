@@ -9,6 +9,6 @@ class QuickBotText extends PHPUnit_Framework_TestCase{
     $this->assertEquals('<to@example.com>', $message->recipients[0]);
     $this->assertEquals('test subject', $message->subject);
     preg_match_all('/\n\n(.*)/', $message->source, $matches);
-    $this->assertEquals('test body', $matches[1][0]);
+    $this->assertEquals('test body', mb_convert_encoding($matches[1][0], 'UTF-8', 'ISO-2022-JP'));
   }
 }
