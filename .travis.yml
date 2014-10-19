@@ -1,5 +1,7 @@
-language: ruby
 before_script:
-  - bundle install
+  - mysql -uroot -e "create database hoge"
+  - mysql -uroot -e "create table tokyo"
+  - mysql -uroot -e "create table saitama"
+  - mysql -uroot -e "create table osaka"
 script:
-  - rspec
+  - php -f show_tables.php
