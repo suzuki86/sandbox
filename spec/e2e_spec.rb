@@ -1,15 +1,19 @@
 require 'watir-webdriver'
+require 'headless'
 
 describe "yahoo.co.jp" do
   before do
+    @headless = Headless.new
+    @headless.start
     @browser = Watir::Browser.new :ff
   end
   it "has valid title" do
-    @browser.goto "http://yahoo.co.jp/"
-    expect(@browser.title).to eq("hoge")
+    @browser.goto "http://qiita.com"
+    expect(@browser.title).to eq("Qiita - プログラマの技術情報共有サービス")
   end
   after do
-    @browser.close
+    @browser.quit
+    @headless.destroy
   end
 end
 
