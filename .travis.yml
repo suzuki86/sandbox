@@ -1,5 +1,8 @@
 language: ruby
 before_script:
+  - "gem install rspec"
   - "gem install watir-webdriver"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
+script:
+  - "rspec"
