@@ -11,7 +11,7 @@ describe "yahoo.co.jp" do
   end
   it "has valid title" do
     @browser.goto "http://qiita.com"
-    expect(@browser.title).to eq("Qiita - プログラマの技術情報共有サービス")
+    expect(@browser.title).to eq("Qiita - A technical knowledge sharing platform for programmers.")
   end
   after do
     @browser.quit
