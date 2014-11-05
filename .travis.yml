@@ -2,6 +2,6 @@ language: php
 services:
   - memcached
 before_script:
-  - "apt-get install php5-memcached"
+  - "sudo apt-get install php5-memcached"
 script:
   - phpunit MemcachedTest.php
