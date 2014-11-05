@@ -1,9 +1,5 @@
-language: ruby
-before_script:
-  - "gem install rspec"
-  - "gem install headless"
-  - "gem install watir-webdriver"
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
+language: php
+services:
+  - memcached
 script:
-  - "rspec"
+  - phpunit MemcachedTest.php
