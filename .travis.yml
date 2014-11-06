@@ -3,5 +3,6 @@ services:
   - memcached
 before_script:
   - "sudo apt-get install php5-memcached"
+  - "phpenv config-add travis.php.ini"
 script:
   - phpunit MemcachedTest.php
