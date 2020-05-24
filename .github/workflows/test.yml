@@ -32,7 +32,7 @@ jobs:
 
     - name: Run ack 0
       run: |
-        ack hello --nofilter 
+        ack -s --nofilter hello
 
     - name: Run ack 1
       run: |
