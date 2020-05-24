@@ -12,9 +12,13 @@ jobs:
         go-version: 1.13
       id: go
 
-    - name: Install ack command
+    - name: Install ack-grep
       run: |
         sudo apt-get install ack-grep
+
+    - name: Install ack
+      run: |
+        sudo apt-get install ack
 
     - name: Put test files
       run: |
