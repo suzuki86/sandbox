@@ -32,7 +32,8 @@ jobs:
 
     - name: Run ack 0
       run: |
-        ack hello --nopager >> results.txt
+        # ack hello --nopager >> results.txt
+        ack hello --nofilter
 
     - name: Result
       run: |
