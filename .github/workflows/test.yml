@@ -26,6 +26,14 @@ jobs:
         ls -la
         grep hello dummy_1.txt
 
+    - name: Run ack 0
+      run: |
+        ack hello >> results.txt
+
+    - name: Result
+      run: |
+				cat results.txt
+
     - name: Run ack 1
       run: |
         pwd
