@@ -21,7 +21,7 @@ jobs:
 
     - name: Run ack
       run: |
-        grep test
+        grep test dummy_1.txt
 
     - name: Run ack
       run: |
