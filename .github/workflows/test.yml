@@ -21,9 +21,12 @@ jobs:
 
     - name: Run ack
       run: |
+        pwd
+        ls -la
         grep test dummy_1.txt
 
     - name: Run ack
       run: |
+        pwd
         ls -la
         ack test
