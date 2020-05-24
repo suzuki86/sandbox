@@ -24,7 +24,7 @@ jobs:
       run: |
         pwd
         ls -la
-        grep test dummy_1.txt
+        grep hello dummy_1.txt
 
     - name: Run ack
       run: |
