@@ -32,21 +32,16 @@ jobs:
 
     - name: Run ack 0
       run: |
-        # ack hello --nopager >> results.txt
-        ack hello --nofilter
-
-    - name: Result
-      run: |
-        cat results.txt
+        ack hello --nofilter 
 
     - name: Run ack 1
       run: |
         pwd
         ls -la
-        ack hello
+        ack --nofilter hello
 
     - name: Run ack 2
       run: |
         pwd
         ls -la
-        ack test
+        ack --nofilter test
