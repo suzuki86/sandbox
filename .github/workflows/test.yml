@@ -21,4 +21,5 @@ jobs:
 
     - name: Run ack
       run: |
+        ls -la
         ack test
