@@ -20,13 +20,19 @@ jobs:
       run: |
         echo "test" >> sample.txt
 
-    - name: Run ack
+    - name: Run grep
       run: |
         pwd
         ls -la
         grep hello dummy_1.txt
 
-    - name: Run ack
+    - name: Run ack 1
+      run: |
+        pwd
+        ls -la
+        ack hello
+
+    - name: Run ack 2
       run: |
         pwd
         ls -la
