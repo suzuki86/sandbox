@@ -32,7 +32,7 @@ jobs:
 
     - name: Result
       run: |
-				cat results.txt
+        cat results.txt
 
     - name: Run ack 1
       run: |
