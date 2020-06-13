@@ -30,6 +30,10 @@ jobs:
         ls -la
         grep hello dummy_1.txt
 
+    - name: Run ack B
+      run: |
+        ack --filter hello
+
     - name: Run ack A
       run: |
         ANSI_COLORS_DISABLED=1 ack hello
