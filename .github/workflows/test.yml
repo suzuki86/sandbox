@@ -31,6 +31,10 @@ jobs:
         ls -la
         grep hello dummy_1.txt
 
+    - name: Run ack F
+      run: |
+        ack -s --nofilter hello
+
     - name: Run ack B
       run: |
         ack -s --filter hello
