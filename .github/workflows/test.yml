@@ -25,15 +25,15 @@ jobs:
       run: |
         echo "test" >> sample.txt
 
-    - name: Run grep
-      run: |
-        pwd
-        ls -la
-        grep hello dummy_1.txt
+    # - name: Run grep
+    #   run: |
+    #     pwd
+    #     ls -la
+    #     grep hello dummy_1.txt
 
     - name: Run ack F
       run: |
-        ack -s --nofilter hello
+        ack -s --nopager --nofilter hello
 
     - name: Run ack B
       run: |
