@@ -4,6 +4,7 @@ jobs:
   run-tests:
     name: Dummy test
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
     - uses: actions/checkout@v1
     - name: Set up Go 1.13
